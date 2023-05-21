@@ -1,0 +1,11 @@
+<h3> Valor:  {{ counter }}</h3>
+<div class="botones">
+  <button
+    (click)="Contar(1)"> +1 </button>
+    <button
+    (click)="Contar(-1)"
+    [disabled]="disabled"> -1 </button>
+    <button
+    (click)="Reset()"> Restart </button>
+  </div>
+  <hr>

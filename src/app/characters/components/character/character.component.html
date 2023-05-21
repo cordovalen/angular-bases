@@ -1,0 +1,43 @@
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="..." class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{name}}</h5>
+        <div class="container">
+          <ul class="list-group list-group-flush">
+            <td> Nacimiento:
+            </td>
+            <dd> {{ bornPlace }} </dd>
+            <td> Edad:
+            </td>
+            <dd> {{ age }} años </dd>
+            <td> Vive actualmente:
+            </td>
+            <dd> {{ life }} </dd>
+          </ul>
+          </div>
+          <div
+          style="display: flexbox;">
+          <button
+              class="btn btn-primary" (click)="descripctionCharacter()">Ver Descripcion
+            </button>
+            <button
+              *ngIf="hiddenButton"
+              class="btn btn-outline-primary mx-4"
+              (click)="changeCharacter()">Siguiente
+            </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div
+  [hidden]="hiddenDescription">
+  {{ description }}
+</div>
