@@ -1,0 +1,13 @@
+<h1> Personajes </h1>
+
+
+<div class="row" style="margin-top: 20px; display: flexbox;">
+  <div class="col">
+    <app-description-list [characterList]="characters"
+      (onDelet)="onDeleteCharacter($event)"> </app-description-list>
+  </div>
+
+  <div class="col">
+    <app-description-form (onNewCharacter)="onNewCharacter($event)"></app-description-form>
+  </div>
+</div>

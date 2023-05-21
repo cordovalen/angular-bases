@@ -1,0 +1,25 @@
+<h2>Agrega personajes</h2>
+<form class="row"
+      (ngSubmit)="addCharacter()"
+>
+  <input type="text"
+        [(ngModel)]="character.realName"
+        class="form-control mb-2"
+        name="realName"
+        placeholder="Nombre de actriz/actor"
+        aria-label="Recipient's username"
+        aria-describedby="basic-addon2"
+  >
+  <input type="text"
+        [(ngModel)]="character.characterName"
+        class="form-control mb-2"
+        name="characterName"
+        placeholder="Nombre del personaje"
+        aria-label="Recipient's username"
+        aria-describedby="basic-addon2"
+  >
+  <button class="btn btn-outline-primary"
+          type="button"
+          (click)="addCharacter()"
+  >Agregar</button>
+</form>

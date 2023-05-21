@@ -1,0 +1,28 @@
+
+
+
+<div class="col">
+  <h2>Listado completo</h2>
+  <table class="table table-sm">
+    <tbody>
+      <tr class="row d-felx justify-content-between align-items-center" *ngFor="let character of characterList;
+          let i = index;
+          let isEven = even"
+      >
+        <td class="list-group-item-info col"
+        >{{i+1}}. {{character.realName}} como {{character.characterName}}
+        </td>
+        <i class="fas fa-trash col"
+          style="cursor: pointer;
+          padding-left: 30px;
+          color: bg-primary;"
+          (click) = "deleteCharacter(character.id)"
+        >
+        </i>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+</div>
